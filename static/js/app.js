@@ -96,36 +96,38 @@ function buildCharts(sample) {
     // @TODO: Build a Pie Chart
     // HINT: You will need to use slice() to grab the top 10 sample_values,
     // otu_ids, and labels (10 each).
+
+    // *********couldn't get this to work correctly, commented out for heroku
     
    
-    top10 = belly_button.sort(function(a, b){return b-a}).slice(0,10);
+//     top10 = belly_button.sort(function(a, b){return b-a}).slice(0,10);
 
 
-    final_ids = []
-    final_labels = []
-    final_values = []
+//     final_ids = []
+//     final_labels = []
+//     final_values = []
 
-    for (i = 0; i < otu_ids.length; i++) {
-      final_ids.push(top10[i][0]);
-      final_values.push(top10[i][1]);
-      final_labels.push(top10[i][2]);
-    } 
+//     for (i = 0; i < otu_ids.length; i++) {
+//       final_ids.push(top10[i][0]);
+//       final_values.push(top10[i][1]);
+//       final_labels.push(top10[i][2]);
+//     } 
 
-    var pie_data = [{
-      values: [final_values],
-      labels: [final_labels],
-      type: 'pie'
-    }];
+//     var pie_data = [{
+//       values: [final_values],
+//       labels: [final_labels],
+//       type: 'pie'
+//     }];
     
-    var pie_layout = {
-      height: 400,
-      width: 500
-    };
+//     var pie_layout = {
+//       height: 400,
+//       width: 500
+//     };
     
-    Plotly.newPlot('pie', pie_data, pie_layout);
+//     Plotly.newPlot('pie', pie_data, pie_layout);
 
-  });
-};
+//   });
+// };
 
 
 
